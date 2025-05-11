@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chatgptbot">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:theme="@style/Theme.ChatGPTBot.Light"
+        android:label="ChatGPT Bot" android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round">
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

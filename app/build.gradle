@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    namespace 'com.example.chatgptbot'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.example.chatgptbot"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'org.json:json:20240303'
+}
